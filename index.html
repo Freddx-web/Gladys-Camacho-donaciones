@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Gladys Camacho</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" type="text/css" href="css/style.menu.css">
+    <link rel="stylesheet" type="text/css" href="css/style.button.css">
+<style>
+  * {
+  box-sizing: border-box;
+}
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+
+/*shadows*/
+.w3-card, .w3-card-2 {
+    box-shadow: 0 2px 5px 0 #fff, 0px 1px 20px 0 #91faffe0;
+}
+
+.w3-button:hover {
+    color: #000!important;
+    background-color: #fff!important;
+}
+
+/**/
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #d9fefff2;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+
+
+/* Center the loader */
+#loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border: 3px solid #f3f3f373;
+    border-radius: 50%;
+    border-top: 3px solid #20ffffab;
+    width: 120px;
+    height: 120px;
+    animation: spin 1s cubic-bezier(0.01, 0.42, 0.2, 1.15) infinite;
+}
+
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+#myDiv {
+  display: none;
+  text-align: center;
+}
+
+.footer {
+
+}
+
+
+
+
+
+
+/*gallery*/
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+
+
+
+/*footer*/
+.w3-light-grey, .w3-hover-light-grey:hover, .w3-light-gray, .w3-hover-light-gray:hover {
+    color: #000000b8!important;
+    background-color: #cfeaff8a!important;
+}
+
+
+
+
+
+/********Gallery********/
+
+</style>
+  </head>
+  <body onload="myFunction()" style="margin:0;">
+    <div id="loader"></div>
+      <div class="w3-top">
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+            <a href="https://freddx-web.github.io/Gladys-Camacho/" class="w3-bar-item w3-button">Gladys Camacho</a>
+            <div class="w3-right w3-hide-small">
+              <a href="#" class="w3-bar-item w3-button">Diezmo y ofrenda</a>
+              <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <br>
+      <div style="display:none;" id="myDiv" class="animate-bottom">
+
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="#">Pag1</a>
+          <a href="#">Pag2</a>
+          <a href="#">Pag3</a>
+          <a href="#">Pag4</a>
+        </div>
+        <br>
+        <br>
+        <div class="w3-content" style="max-width:1100px">
+          <h1 class="w3-center">Donaciones Gladys Camacho</h1><br>
+
+
+          
+          <hr>
+        
+      </div>
+    <div class="w3-container w3-padding-64" id="contact">
+      <h3 class="w3-center">Ayúdanos a llegar a otras</h3>
+      <p>Como ministerio nos esforzamos por hacer publicaciones de calidad que te ayuden a caminar con Cristo. Si hoy la autora te ha ayudado o motivado, ¿considerarías hacer una donación para apoyar nuestro blog de Mujer Verdadera?
+      </p>
+      <img src="https://img.icons8.com/color/48/null/facebook.png"/>
+      <img src="https://img.icons8.com/fluency/48/null/instagram-new.png"/>
+      <img src="https://img.icons8.com/color/48/null/whatsapp--v1.png"/>
+    </div>
+  </div>
+    <div>
+      <footer class="w3-center w3-light-grey w3-padding-32">
+        <tr>
+          <td>Hecha  por </td>
+          <td><b>Danny Lopez</b> Desarrollador de App <img src="imagenes/52725397_2095956053814343_2789185348666654720_n.jpg" style="height: 20px; display:block;margin:auto; opacity: 0.8; width: 20px; border-radius: 100%; "> </td>
+        </tr>
+      </footer>
+    </div>
+  </div>
+
+
+
+
+
+
+
+    <script>
+    var myVar;
+
+      function myFunction() {
+      myVar = setTimeout(showPage, 3000);
+    }
+
+    function showPage() {
+      document.getElementById("loader").style.display = "none";
+      document.getElementById("myDiv").style.display = "block";
+    }
+    </script>
+    <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+   </script>
+  </body>
+</html>
